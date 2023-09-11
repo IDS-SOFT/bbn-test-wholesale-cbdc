@@ -1,4 +1,4 @@
-## bbn-test-wholesale-cbdc
+## Setup details -
 
 **1. Project Setup**
 
