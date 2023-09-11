@@ -1,4 +1,4 @@
-# bbn-test-wholesale-cbdc
+## bbn-test-wholesale-cbdc
 
 **1. Project Setup**
 
@@ -28,7 +28,7 @@ npx hardhat run ./scripts/deploy.ts --network bbn_testnet
 
 **6. Interact with Smart Contract**
 
-**Create an Account, Check Balance, Account Count, Account Addresses. **
+Create an Account, Check Balance, Account Count, Account Addresses.
 
 ```shell
 npx hardhat run ./scripts/interact.ts --network bbn_testnet
