@@ -1,3 +1,4 @@
+
 ## Setup details -
 
 **1. Project Setup**
@@ -8,6 +9,7 @@ npm install
 ```
 **2. Create a new .env file and write below configuration**
 
+ACCOUNT_ADDRESS = "YOUR_ACCOUNT_ADDRESS"
 PRIVATE_KEY = "YOUR_PRIVATE_KEY"
 CONTRACT_ADDRESS = "YOUR_CONTRACT_ADDRESS"
 RPC_NODE_URL = "https://idspeer1.test.bharatblockchain.io:15021"
@@ -37,3 +39,4 @@ npx hardhat run ./scripts/interact.ts --network bbn_testnet
 **7. Check your txs on BBN Testnet Explorer**
 
 http://testnet.bharatblockchain.io/
+
