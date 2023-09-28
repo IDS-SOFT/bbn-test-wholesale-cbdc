@@ -1,0 +1,40 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/ayushraina/Desktop/IDS/testing/bbn-test-wholesale-cbdc/contracts/wcbdc.sol": {
+      "lastModificationDate": 1695898983689,
+      "contentHash": "c4a83a51dad893e5ef2328fb56b2cfff",
+      "sourceName": "contracts/wcbdc.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "WholesaleCBDC"
+      ]
+    }
+  }
+}

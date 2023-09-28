@@ -10,7 +10,7 @@ contract WholesaleCBDC {
     // Events
     event CBDCIssued(address indexed to, uint256 amount);
     event CBDCTransferred(address indexed from, address indexed to, uint256 amount);
-    event CheckBalance(string text, uint amount);
+    event CheckBalance(uint amount);
 
     // Modifiers
     modifier onlyCentralBank() {
@@ -71,11 +71,8 @@ contract WholesaleCBDC {
     }
     
     function getBalance(address user_account) external returns (uint){
-    
-       string memory data = "User Balance is : ";
-       uint user_bal = user_account.balance;
-       emit CheckBalance(data, user_bal );
-       return (user_bal);
+        emit CheckBalance(balances[user_account]);
+        return balances[user_account];
 
     }
     
