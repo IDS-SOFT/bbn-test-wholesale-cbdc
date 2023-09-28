@@ -8,7 +8,6 @@ describe('WholesaleCBDC', function () {
 
   before(async function () {
       accounts = await ethers.getSigners();
-      // console.log(accounts[0].address);
       WholesaleCBDC = await ethers.getContractFactory('WholesaleCBDC');
     });
     
@@ -40,7 +39,6 @@ describe('WholesaleCBDC', function () {
     const senderAddressSigner = await ethers.getSigner(sender);
 
     await wholesaleCBDCInstance.issueCBDC(sender, initialBalance);
-    // const secondInstance = await wholesaleCBDCInstance.connect(senderAddressSigner);
     await wholesaleCBDCInstance.connect(senderAddressSigner).transferCBDC(recipient, transferAmount);
 
     const senderBalance = await wholesaleCBDCInstance.getCBDCBalance(sender);
